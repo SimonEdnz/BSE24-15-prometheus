@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s
+
+scrape_configs:
+  - job_name: "letschat_metrics"
+    scrape_interval: 10s
+
+    static_configs:
+      - targets: ["bse24-15.onrender.com"]
